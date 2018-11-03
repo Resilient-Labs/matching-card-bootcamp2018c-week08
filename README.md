@@ -11,7 +11,7 @@
 **Tech used:** HTML5, CSS3, JavaScript.
 
 ## Lessons Learned:
-Learned to use setTimout() to delay my function from running so that the player could see what is underneath the second card they clicked on without having the function check if they were not a match and flip the cards over super fast. Also learned how to shuffle the containers in my section howlding the different cards without changing my hard coded html by using the css property order.
+Used setTimout() to delay my function from running so that the player could see what is underneath the second card they clicked, so that the user gets a chance to flip and see the second card without the function checking for a match & flipping the card over to fast. Also learned how to shuffle the element in my section container holding the different cards without changing my hard coded html by using the css property order.
 
 ## Examples:
 
