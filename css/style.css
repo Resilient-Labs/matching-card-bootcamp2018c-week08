@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding:3% 8%;
+  padding-top: 30px;
+  background-image: url(square.jpg);
+  font-family: 'Cinzel', serif;
+}
+
+/***************************************
+LAYOUT
+*****************************************/
+.all{
+  background-color: rgb(0,0,0);
+  padding-bottom: 2%;
+  border-radius: 10px;
+}
+
+header{
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin:20px;
+  padding: 30px 0 20px 0;
+}
+
+header img {
+  width: 170px;
+  padding-right: 20px;
+}
+
+.container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  grid-gap: 25px;
+  align-content: stretch;
+  padding: 0 50px;
+}
+
+h1{
+  color: rgb(241,179,79,.8);
+  font-size: 2em;
+  margin:0;
+  padding-right: 20px;
+}
+
+button{
+  background-color: rgb(116,1,0);
+  border: none;
+  font-weight: bold;
+  font-size: .6em;
+  border-radius: 3px
+}
+
+/***************************************
+CARDS
+*****************************************/
+.container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.bot{
+  transition-duration: 3s;
+  display: none;
+}
+
+.top{
+  background-color: rgb(46,46,46);
+}
+
+.top:hover{
+  background-color: rgb(100,100,100);
+}
+
+.cards{
+  width:100%;
+  height:90%;
+}
+
+.cards:hover{
+  transform: scale(1.04);
+}
+
+.credit, a{
+  text-align: center;
+  color:rgb(241,179,79,.8);
+  padding: 40px 0;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+a:hover{
+  color:rgb(130,190,138);
+}
+
+/***************************************
+MEDIA QUERIES
+*****************************************/
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/* mobile */
+@media screen and (max-width: 767px){
+  .container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-content: stretch;
+    padding: 0 30px;
+    justify-content: center;
+  }
+
+  .cards{
+    width:150px;
+    height:150px;
+  }
+
+  header img {
+    width: 100px;
+    padding-right: 30px;
+  }
+
+  h1{
+    color: rgb(241,179,79,.8);
+    font-size: 1em;
+    margin:0;
+    padding-right: 20px;
+  }
+
+}
